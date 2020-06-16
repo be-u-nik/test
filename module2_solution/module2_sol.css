@@ -1,21 +1,24 @@
 body{
 	font-size: 130%;
-	background-color: rgb(255,193,193);
 }
 h1{
 	text-align: center;
 	margin-bottom: 40px;
-	font-family: 'Akronim';
+	font-family: "Comic Sans MS", cursive, sans-serif ;
 	color: brown;
 	font-size: 285%;
 
+}
+.div1 , .div2 ,.div3{
+	position: relative;
+	float: left;
 }
 
 .sec{
 	position: relative;
 	float: left;
-	background-color: gold;
-	padding:0px 0px 3px 3px ;
+	background-color: grey;
+	padding: 0px 0px 3px 3px ;
 	border: 1px solid black;
 	box-sizing: border-box; 
 	margin:5px;
@@ -44,23 +47,22 @@ h1{
 #sushi{
 	background-color: blue;
 }
-/*I didn't use the 12-grid system here.
-The margins are taking up some space, forcing the sections to appear in the next line before reaching the width reach the breakpoint. */
-@media (min-width: 992px){
-	.sec{
 
-		width: 32%;
+@media (min-width: 992px){
+	.div1 , .div2 ,.div3{
+
+		width: 33.33%;
 		
 	}
 }
 @media (min-width: 768px) and (max-width: 991px){
-	.sec1{
-		width: 48%;
+	.div1{
+		width: 50%;
 	}
-	.sec2{
-		width: 48%;
+	.div2{
+		width: 50%;
 	}
-	.sec3{
-		width: 97%;
+	.div3{
+		width: 100%;
 	}
 }
